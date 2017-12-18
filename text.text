@@ -1,0 +1,37 @@
+ATM machine
+- ATM needs to have cash
+- notify a person that transaction was successful or unsuccessful or if it fails
+
+Actions
+- withdraw (input: amount + credentials, output: message - success/ failure)
+- deposit (input: amount + credentials, output: message - success/ failure)
+- check balance (input: credentials output: message - balance)
+
+Attributes
+  - Cash balance
+
+Person has an account
+- person can withdraw cash from account
+- person can deposit cash into account
+- person can see her account balance
+
+  Actions
+  - deposit bills
+  - withdraw bills
+
+  Attributes
+  - name
+  - account
+
+Account
+- an account will hold a person's balance
+- provide a person with ability to withdraw or deposit into person's account
+
+  Actions
+   - the account balance
+   - withdraw
+   - deposit
+
+  Attributes:
+    - Account balance
+    - pin code
