@@ -7,12 +7,6 @@ class Atm
     @funds = 1000
   end
 
-  private
-  
-  def insufficient_funds_in_atm?(amount)
-    @funds < amount
-  end
-
   def withdraw(amount, account)
     case
       when insufficient_funds_in_account?(amount, account)
@@ -33,4 +27,11 @@ class Atm
     account.balance = account.balance - amount
     { status: true, message: 'success', date: Date.today, amount: amount }
   end
+
+  private
+
+  def insufficient_funds_in_atm?(amount)
+    @funds < amount
+  end
+
 end
