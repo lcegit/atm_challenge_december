@@ -1,7 +1,7 @@
 require 'date'
 
 class Atm
-  attr_accessor :funds, :active, :disabled, :bills
+  attr_accessor :funds, :active, :disabled
 
   def initialize
     @funds = 1000
